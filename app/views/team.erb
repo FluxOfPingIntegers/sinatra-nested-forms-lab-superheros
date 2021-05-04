@@ -1,3 +1,11 @@
+<h1>A NEW SUPER HERO TEAM HAS ARRIVED!</h1>
+    <p>Team Name: <%= @team.name %></p>
+    <p>Team Motto: <%= @team.motto %></p>
 
-
+    <h2>The Members Of This Assembled Team Are:</h2>
+        <% @superheroes.each do |i |%>
+        <h3>Super Hero Name: <%= i.name %><h3>
+        <p>Hero Power: <%= i.power %></p>
+        <p>Hero Biography: <%= i.biography %></p>
+        <% end %>
 
